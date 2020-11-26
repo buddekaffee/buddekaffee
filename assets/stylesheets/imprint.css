@@ -1,0 +1,52 @@
+.br::before {
+  content: "\A" ;
+  white-space: pre ;
+}
+
+main {
+  font-family: 'Dosis', sans-serif;
+  width: 80vw;
+  max-width: 800px;
+  margin:  0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+section {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 18px 0 6px 0;
+}
+
+.date {
+  margin-bottom: 14px;
+}
+
+aside {
+  font-size: 16px;
+  color: rgb(105, 105, 105);
+}
+
+p {
+  font-size: 18px;
+}
+
+main li {
+  font-size: 18px;
+  list-style: square;
+  margin-left: 30px;
+}
+
+ul {
+  margin: 10px 0;
+}

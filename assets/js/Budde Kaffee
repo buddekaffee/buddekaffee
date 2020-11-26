@@ -1,0 +1,10 @@
+color1: rgb(37 51 74)
+color2: rgb(252, 245, 231)
+
+main-font-family: 'Dosis', sans-serif
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+main-font-size: clamp(16px, calc(1rem + 0.9vw), 20px)
+
+header-font-family: 'Amatic SC', cursive
+header-font-family (max-width: 600px): 30px
+header-font-family (min-width: 600px): clamp(20px, calc(0.5rem + 1.6vw), 30px);

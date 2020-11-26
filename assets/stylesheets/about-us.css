@@ -1,0 +1,302 @@
+/* root */
+
+.br::before {
+  content: "\A";
+  white-space: pre;
+}
+
+main {
+  min-height: 100vh;
+  font-family: "Dosis", sans-serif;
+  color: var(--color1);
+  font-size: var(--fontSizeSmall);
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+main > div {
+  padding: 0 10%;
+  margin-bottom: 80px;
+}
+
+main img {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* about us */
+
+.arrow {
+  display: none;
+}
+
+main p {
+text-align: justify;
+hyphens: auto;
+}
+
+main h1, main h2{
+  font-weight: bolder;
+  font-size: calc(var(--fontSizeSmall) + 14px);
+  width: fit-content;
+  width: -moz-fit-content;
+  background: linear-gradient(transparent 65%, rgb(243 237 236) 35%);
+  margin-bottom: 8px;
+}
+
+.coffee-content h2 {
+  background: unset;
+}
+
+.about-text1 {
+  padding: 0;
+}
+
+.about-content {
+  padding: 0 10%;
+}
+
+.about-photo {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+main img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.link,
+.link:visited {
+  font-style: italic;
+  color: rgb(73, 115, 179);
+  border-bottom: dashed rgb(73, 115, 179) 1px;
+}
+
+/* about coffee */
+
+.about-coffee-containers {
+  background-color: rgb(0, 0, 0);
+  padding: 40px 7%;
+}
+
+.about-coffee-container,
+.about-coffee-container2,
+.about-coffee-container3,
+.about-coffee-container4 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.about-coffee-containers a,
+.about-coffee-containers a:visited {
+  color: rgb(208, 227, 243);
+  font-style: italic;
+  border-bottom: dashed 1px rgb(208, 227, 243);
+}
+
+.about-coffee-container4 {
+  padding-top: unset;
+}
+
+.about-coffee-container2,
+.about-coffee-container3 {
+  padding-top: unset;
+}
+
+.about-coffee-container margin {
+  background: unset;
+}
+
+.about-coffee-containers img {
+  box-shadow: unset;
+}
+
+.about-coffee-photo2,
+.about-coffee-photo3 {
+  margin-bottom: 30px;
+}
+
+.about-coffee-container4 aside {
+  font-style: italic;
+  font-size: calc(var(--fontSizeSmall) - 2px);
+}
+
+@media (min-width: 600px) {
+  main {
+    font-size: var(--fontSizeMidium);
+  }
+
+  .about-coffee-containers img {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  main {
+    font-size: var(--fontSizeLarge);
+  }
+
+  .about-text1 {
+    margin-top: 30px;
+    position: relative;
+    padding: 0;
+  }
+
+  .mainPhotoContainer {
+    position: relative;
+  }
+
+  .mainPhotoContainer::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0px -15px 20px 0px white;
+  }
+
+  .about-photo {
+    margin: 0 auto;
+    max-width: unset;
+    width: 65vw;
+    min-width: 1000px;
+    height: 80vh;
+    min-height: 800px;
+    object-fit: cover;
+    box-shadow: 2px 2px white;
+  }
+
+  .about-content {
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+  }
+
+  .fa-angle-double-down {
+    color: rgb(233, 231, 231);
+    font-size: 30px;
+    animation: blinkArrow 1.3s linear 0s infinite alternate;
+  }
+
+  @keyframes blinkArrow {
+    0% {
+      color: rgb(233, 231, 231);
+    }
+    100% {
+      color: rgb(89, 90, 92);
+    }
+  }
+
+  .removeArrow {
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  @keyframes removeArrow {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  .about-text1 h1,
+  .about-cake,
+  .about-coffee-containers margin {
+    font-size: calc(var(--fontSizeLarge + 14px));
+  }
+
+  .about-coffee-containers img {
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+    margin: unset;
+  }
+
+  .about-coffee-container,
+  .about-coffee-container2,
+  .about-coffee-container3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+  }
+
+  .about-coffee-container2 {
+    flex-direction: row-reverse;
+  }
+
+  .coffee-content,
+  .coffee-content2,
+  .coffee-content3 {
+    width: 470px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .coffee-content,
+  .coffee-content3 {
+    margin-left: 30px;
+  }
+
+  .coffee-content2 {
+    margin-right: 30px;
+  }
+
+  .about-coffee-container4-aside p {
+    text-align: center;
+  }
+
+  /* About Caje */
+
+  .about-cake div {
+    height: 450px;
+    width: 50vh;
+    max-width: 500px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: scroll;
+  }
+
+  .about-cake {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: min-content;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .about-cake-photo {
+    width: 40vw;
+    max-width: 580px;
+    height: 105%;
+    object-fit: cover;
+    margin: 0;
+  }

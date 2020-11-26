@@ -1,0 +1,234 @@
+:root {
+  --color1: rgb(37 51 74);
+  --color2: rgb(252, 245, 231);
+  --fontSize: clamp(16px, calc(1rem + 0.9vw), 20px);
+  --fontSizeSmall: 16px;
+  --fontSizeMidium: 18px;
+  --fontSizeLarge: 20px;
+}
+
+body {
+  min-width: 300px;
+}
+
+body, body a, body a:visited {
+  color: var(--color1);
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+.desktop-header-image {
+  display: none;
+}
+
+/* Header */
+header {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.budde-logo-name {
+  display: block;
+  height: 40px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.267);
+}
+
+/* Menu Icon */
+.container {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 24px;
+  height: 3px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 20px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-10px, 10px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-3px, -3px) ;
+}
+
+/* Menu List */
+
+.menu-list {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  top: 80px;
+}
+
+nav ul {
+  background-color: rgba(255, 255, 255);
+  height: 250px;
+  text-align: center;
+  width: 100vw;
+  min-width: 300px;
+  z-index: 1000;
+  height: calc(100vh - 80px);
+}
+
+nav ul li {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+  nav ul li a, nav ul li a:visited {
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+}
+
+nav ul li a:hover {
+  opacity: 0.6;
+  transition-duration: 0.2s;
+}
+
+
+.show {
+  animation: navigationShow 0.5s;
+  overflow: scroll;
+}
+
+@keyframes navigationShow {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 20px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p, footer a {
+  font-family: 'Dosis', sans-serif;
+  font-size: var(--fontSizeSmall);
+  font-weight: 200;
+  margin-bottom: 6px;
+}
+
+
+@media(min-width: 600px){
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .budde-logo-name {
+    margin: 0;
+  }
+  
+  nav {
+    position: unset;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .menu-list {
+    width: min-content;
+    height: min-content;
+    display: flex;
+    overflow: unset;
+  }
+
+  .menu-list li img {
+    display: none;
+  }
+
+  .menu-list li {
+    width: max-content;
+    margin: 0 20px 0 0 ;
+  }
+
+  
+  .menu-list li a {
+    font-size: 22px;
+  }
+
+  .container {
+    display: none;
+  }
+
+}
+
+@media(min-width: 1024px){
+
+  .desktop-header-image {
+    height: 100px;
+    width: 100vw;
+    background-image: url("../images/header-background.jpg");
+    background-position: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .menu-list li a {
+    font-size: 28px;
+  }
+
+  .desktop-header-image img {
+    width: 8%;
+    max-width: 105px;
+  }
+
+  .menu-list li, .menu-list li:last-child {
+    margin: 0 3vw;
+  }
+
+  header {
+    border:2px solid rgb(46, 45, 45);
+    outline: dotted 2px rgb(46, 45, 45);
+    outline-offset: -0.4em;
+  }
+
+  footer {
+    margin-top: 50px;
+    background-color: rgb(252, 245, 231);
+  }
+
+}
