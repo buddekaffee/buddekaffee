@@ -22,15 +22,20 @@ main a:visited {
 /* welcome */
 
 .welcome-text {
-  white-space: pre-wrap;
   width: 100vw;
-  margin-top: 185px;
+  margin-top: 275px;
+  margin-bottom: 65px;
 }
 
 .welcome-text section {
   width: 70%;
   min-width: 300px;
   margin: 0 auto;
+}
+
+.welcome-text section h1,
+.welcome-text section p {
+  margin-bottom: 14px;
 }
 
 .slider_fade {
@@ -312,7 +317,8 @@ a.btn-border:active:before {
   }
 
   .welcome-text {
-    margin-top: 260px;
+    margin-top: 330px;
+    margin-bottom: 70px;
   }
 
   .welcome-text section {
@@ -321,6 +327,7 @@ a.btn-border:active:before {
     padding: 40px;
     max-width: 1080px;
     margin-bottom: 20px;
+    margin-top: 30px;
   }
 
   .about-container {
@@ -357,6 +364,7 @@ a.btn-border:active:before {
 
   .about-container article p {
     margin: 0 10px;
+    padding: 0 30px;
   }
 
   a.btn-border {
@@ -442,6 +450,10 @@ a.btn-border:active:before {
 
   .welcome-text {
     margin-top: 340px;
+  }
+
+  .welcome-text section {
+    margin-top: 400px;
   }
 
   .about-container,
