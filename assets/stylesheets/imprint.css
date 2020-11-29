@@ -1,13 +1,13 @@
 .br::before {
-  content: "\A" ;
-  white-space: pre ;
+  content: "\A";
+  white-space: pre;
 }
 
 main {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   width: 80vw;
   max-width: 800px;
-  margin:  0 auto;
+  margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 1.2;
@@ -49,4 +49,28 @@ main li {
 
 ul {
   margin: 10px 0;
+}
+
+.special-thanks {
+  text-align: center;
+  margin-top: 80px;
+  padding: 7% 5%;
+  border: dashed rgb(105, 105, 105) 2px;
+  background: rgb(252, 245, 231);
+  border-radius: 8px;
+}
+
+.special-thanks span {
+  font-size: 25px;
+}
+
+.special-thanks li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.special-thanks ul li a {
+  font-style: italic;
+  color: rgb(28 56 131 / 71%);
+  border-bottom: dashed rgb(28 56 131 / 71%) 1px;
 }
