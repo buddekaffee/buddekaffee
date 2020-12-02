@@ -230,6 +230,10 @@ a.btn-border:active:before {
   bottom: -1px;
 }
 
+.unwrap {
+  white-space: nowrap;
+}
+
 /* menu */
 
 .menu-container {
