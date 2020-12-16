@@ -93,7 +93,7 @@ main img {
 }
 
 .about-coffee-containers a,
-.about-coffee-containers a:visited, {
+.about-coffee-containers a:visited {
   color: rgb(208, 227, 243);
   font-style: italic;
   border-bottom: dashed 1px rgb(208, 227, 243);
